@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../dist/test",
+    "rootDir": "../",
+    "sourceMap": true,
+    "baseUrl": "../",
+    "paths": {
+      "@client/*": ["client/*"],
+      "@test/*": ["test/*"],
+      "@public/*": ["public/*"]
+    },
+    "types": ["jest", "node"]
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"]
+}
